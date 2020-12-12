@@ -1,0 +1,2 @@
+
+For /R  %%G IN (*.pdf) do "C:\Program Files (x86)\gs\gs9.27\bin\gswin32c.exe" -sDEVICE=pdfwrite -dPDFSETTINGS=/screen  -dNOPAUSE -dBATCH -dAutoRotatePages=/None -sOutputFile="%%~nG.comp.pdf" "%%G" && del "%%~G"
